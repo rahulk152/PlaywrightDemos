@@ -1,0 +1,79 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="9.195999">
+<testsuite name="vstesting\visualtesting.spec.ts" timestamp="2026-01-07T04:56:38.115Z" hostname="chromium" tests="1" failures="1" skipped="0" time="6.652" errors="0">
+<testcase name="test1" classname="vstesting\visualtesting.spec.ts" time="6.652">
+<failure message="visualtesting.spec.ts:3:5 test1" type="FAILURE">
+<![CDATA[  [chromium] › vstesting\visualtesting.spec.ts:3:5 › test1 ─────────────────────────────────────────
+
+    Error: A snapshot doesn't exist at C:\Users\RahulKumar\IdeaProjects\PlaywrightDemos\tests\vstesting\visualtesting.spec.ts-snapshots\test1-1-chromium-win32.png, writing actual.
+
+      12 |
+      13 |     //appraoch 2
+    > 14 |     await expect(page).toHaveScreenshot();
+         |     ^
+      15 |
+      16 |     
+      17 |     //compare snapshot of the element
+        at C:\Users\RahulKumar\IdeaProjects\PlaywrightDemos\tests\vstesting\visualtesting.spec.ts:14:5
+
+    Error: A snapshot doesn't exist at C:\Users\RahulKumar\IdeaProjects\PlaywrightDemos\tests\vstesting\visualtesting.spec.ts-snapshots\logo-chromium-win32.png, writing actual.
+
+      18 |
+      19 |     const logo=page.locator("img[alt='Tricentis Demo Web Shop']");
+    > 20 |     expect(await logo.screenshot()).toMatchSnapshot("logo.png");
+         |                                     ^
+      21 |
+      22 |
+      23 | })
+        at C:\Users\RahulKumar\IdeaProjects\PlaywrightDemos\tests\vstesting\visualtesting.spec.ts:20:37
+
+    attachment #1: test1-1 (image/png) ─────────────────────────────────────────────────────────────
+    Expected: vstesting\visualtesting.spec.ts-snapshots\test1-1-chromium-win32.png
+    Received: ..\test-results\vstesting-visualtesting-test1-chromium\test1-1-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: logo (image/png) ────────────────────────────────────────────────────────────────
+    Expected: vstesting\visualtesting.spec.ts-snapshots\logo-chromium-win32.png
+    Received: ..\test-results\vstesting-visualtesting-test1-chromium\logo-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\vstesting-visualtesting-test1-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\vstesting-visualtesting-test1-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\vstesting-visualtesting-test1-chromium\error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\vstesting-visualtesting-test1-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\vstesting-visualtesting-test1-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests\vstesting\visualtesting.spec.ts-snapshots\test1-1-chromium-win32.png]]
+
+[[ATTACHMENT|test-results\vstesting-visualtesting-test1-chromium\test1-1-actual.png]]
+
+[[ATTACHMENT|tests\vstesting\visualtesting.spec.ts-snapshots\logo-chromium-win32.png]]
+
+[[ATTACHMENT|test-results\vstesting-visualtesting-test1-chromium\logo-actual.png]]
+
+[[ATTACHMENT|test-results\vstesting-visualtesting-test1-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\vstesting-visualtesting-test1-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\vstesting-visualtesting-test1-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\vstesting-visualtesting-test1-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
